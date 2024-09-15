@@ -45,7 +45,6 @@ fortranobject_c_path = os.path.join(f2py_include_path, 'fortranobject.c')
 
 # Define the extension module
 if sys.platform != 'win32':
-    raise Exception()
     add_libraries = ['gfortran']
     c_module_file = 'mymodulemodule_other.c'
 else:
